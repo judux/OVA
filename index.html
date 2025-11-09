@@ -141,6 +141,7 @@
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             opacity: 0;
+            border: none; /* Quitamos todos los bordes */
         }
 
         .level-card:hover {
@@ -148,33 +149,10 @@
             box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
 
-        .level-card.blue {
-            border-top: 6px solid #6bcff6;
-        }
-
-        .level-card.red {
-            border-top: 6px solid #ff6b6b;
-        }
-
-        .level-card.yellow {
-            border-top: 6px solid #ffd93d;
-        }
-
         .level-icon {
             font-size: 4rem;
             margin-bottom: 20px;
-        }
-
-        .level-card.blue .level-icon {
-            color: #6bcff6;
-        }
-
-        .level-card.red .level-icon {
-            color: #ff6b6b;
-        }
-
-        .level-card.yellow .level-icon {
-            color: #ffd93d;
+            color: #06b6d4; /* Color principal unificado */
         }
 
         .level-card h2 {
