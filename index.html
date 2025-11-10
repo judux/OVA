@@ -813,6 +813,9 @@
     <audio id="levelCompleteSound" preload="auto">
         <source src="assets/sounds/level-complete.mp3" type="audio/mpeg">
     </audio>
+    <audio id="backSound" preload="auto">
+        <source src="assets/sounds/back.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- PANTALLA DE INTRO -->
     <div id="intro-screen">
@@ -909,7 +912,8 @@
             click: document.getElementById('clickSound'),
             correct: document.getElementById('correctSound'),
             incorrect: document.getElementById('incorrectSound'),
-            levelComplete: document.getElementById('levelCompleteSound')
+            levelComplete: document.getElementById('levelCompleteSound'),
+            back: document.getElementById('backSound')
         };
 
         // Función para reproducir sonidos
@@ -1454,7 +1458,7 @@
 
         // BOTÓN VOLVER
         document.querySelector('.back-button').addEventListener('click', () => {
-            playSound('click');
+            playSound('back');
             gsap.to('#content-screen', {
                 opacity: 0,
                 duration: 0.5,
